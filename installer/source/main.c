@@ -196,7 +196,7 @@ int kernel_payload(struct thread *td, struct kernel_payload_args* args)
   *(uint32_t *)(kernel_base + 0x69F4E0) = 0x90C3C031;
 
   // flatz enable ext storage
-  *(uint64_t *)(kernel_base + 0x844820) = 0x31C0C3;
+  *(uint32_t *)(kernel_base + 0x844820) = 0x31C0C3;
 	
   // flatz enable debug RIF
   *(uint64_t *)(kernel_base + 0x62D30D) = 0x3D38EB00000001B8;
